@@ -1,369 +1,220 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Navira Global LLC | Mobile Phone Wholesale</title>
-  <meta name="description" content="Navira Global LLC — wholesale supplier of mobile phones and electronics for global distributors and resellers."/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Navira Global LLC | Mobile Phone Wholesale & Distribution</title>
+  <meta name="description" content="Navira Global LLC — wholesale distribution of mobile phones for global partners. Sourcing, logistics support, and B2B inquiry-based supply." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css"/>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Top glow -->
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
-
+  <!-- Top Nav -->
   <header class="header">
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="Navira Global LLC Home">
-        <span class="logo-dot"></span>
-        <span class="brand-text">Navira Global LLC</span>
-      </a>
+    <div class="wrap nav">
+      <a class="logo" href="#top" aria-label="Navira Global LLC home">Navira Global LLC</a>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <button class="navBtn" id="navBtn" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
-        <a href="#brands">Brands</a>
-        <a href="#products">Products</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#process">Process</a>
-        <a href="#contact" class="btn btn-primary">Get Quote</a>
+      <nav class="navLinks" id="navLinks" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="pillBtn">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO (parallax background + parallax layers) -->
+    <!-- HERO: full-width image + overlay text (parallax) -->
     <section class="hero" aria-label="Hero">
-      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="heroBg" id="heroBg" role="img" aria-label="Professional business background image"></div>
 
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="pill">Global Mobile Phone Wholesale</p>
-          <h1>Bulk Smartphones for Distributors, Wholesalers & Retailers</h1>
-          <p class="lead">
-            Navira Global LLC helps partners source high-demand mobile phones with verified supply,
-            competitive bulk pricing, and reliable logistics support.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Request Pricing</a>
-            <a class="btn btn-ghost" href="#products">View Categories</a>
-          </div>
-
-          <div class="hero-stats">
-            <div class="stat">
-              <div class="stat-num">Verified</div>
-              <div class="stat-label">Sourcing & documentation</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">Bulk</div>
-              <div class="stat-label">Volume-based pricing</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">Global</div>
-              <div class="stat-label">Shipping support</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Parallax visual -->
-        <div class="hero-visual reveal">
-          <div class="glass-card">
-            <div class="glass-header">
-              <div class="chip">In-demand SKUs</div>
-              <div class="chip chip-outline">Fast fulfillment</div>
-            </div>
-
-            <div class="parallax-stage" aria-hidden="true">
-              <div class="layer glow" data-depth="0.10"></div>
-
-              <!-- phone “cards” (pure CSS shapes, no image needed) -->
-              <div class="layer phone phone-1" data-depth="0.28"></div>
-              <div class="layer phone phone-2" data-depth="0.18"></div>
-              <div class="layer phone phone-3" data-depth="0.34"></div>
-
-              <div class="layer badge" data-depth="0.22">
-                <div class="badge-title">Wholesale-ready</div>
-                <div class="badge-sub">lots • bundles • pallets</div>
-              </div>
-
-              <div class="layer badge badge-2" data-depth="0.14">
-                <div class="badge-title">Auth-first</div>
-                <div class="badge-sub">verified sourcing</div>
-              </div>
-            </div>
-
-            <div class="glass-footer">
-              <div class="kpi">
-                <div class="kpi-num">Smartphones</div>
-                <div class="kpi-sub">Primary focus</div>
-              </div>
-              <div class="kpi">
-                <div class="kpi-num">Accessories</div>
-                <div class="kpi-sub">Optional add-ons</div>
-              </div>
-              <div class="kpi">
-                <div class="kpi-num">Laptops</div>
-                <div class="kpi-sub">Secondary category</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <a class="scroll-hint" href="#brands" aria-label="Scroll to brands">
-        <span></span>
-      </a>
-    </section>
-
-    <!-- BRAND STRIP -->
-    <section class="section" id="brands">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>Mobile Brands We Supply</h2>
-          <p>Popular brands for international trade and reseller demand.</p>
-        </div>
-
-        <div class="brand-strip reveal">
-          <div class="brand-pill">Apple</div>
-          <div class="brand-pill">Samsung</div>
-          <div class="brand-pill">Google Pixel</div>
-          <div class="brand-pill">Xiaomi</div>
-          <div class="brand-pill">OnePlus</div>
-          <div class="brand-pill">Oppo</div>
-          <div class="brand-pill">Vivo</div>
-          <div class="brand-pill">Huawei</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PHOTO PARALLAX SECTION 1 -->
-    <section class="photo-parallax">
-      <div class="photo-bg" aria-hidden="true"></div>
-      <div class="container photo-content reveal">
-        <h2>Built for Wholesale, Not Retail</h2>
-        <p>
-          We operate with trade-first processes — volumes, variants, region-specific needs, and
-          fulfillment you can count on.
+      <div class="wrap heroInner">
+        <h1 class="heroTitle reveal">Transform Your Mobile Sourcing Today</h1>
+        <p class="heroSub reveal">
+          Navira Global LLC is a wholesale-focused distributor specializing in mobile phones.
+          We work with resellers, wholesalers, and international buyers through inquiry-based supply.
         </p>
-        <div class="photo-bullets">
-          <div class="mini-card">Bulk lots & bundles</div>
-          <div class="mini-card">Documentation support</div>
-          <div class="mini-card">Market-aware sourcing</div>
+
+        <div class="heroCtas reveal">
+          <a class="btnPrimary" href="#contact">Send an Inquiry</a>
+          <a class="btnGhost" href="#services">Explore Services</a>
         </div>
       </div>
     </section>
 
-    <!-- PRODUCTS -->
-    <section class="section alt" id="products">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>Wholesale Categories</h2>
-          <p>Primary focus on smartphones, with supporting electronics for bundle deals.</p>
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="sectionHead reveal">
+          <h2>Services</h2>
+          <p>Designed for B2B partners. No online checkout — we quote based on your requirements.</p>
         </div>
 
-        <div class="grid tiles reveal">
-          <div class="tile">
-            <div class="tile-icon">📱</div>
-            <h3>Smartphones</h3>
-            <p>Unlocked and region-specific SKUs for reseller markets.</p>
-          </div>
-          <div class="tile">
-            <div class="tile-icon">🔌</div>
-            <h3>Accessories</h3>
-            <p>Chargers, cables, power banks, cases, screen protection.</p>
-          </div>
-          <div class="tile">
-            <div class="tile-icon">🎧</div>
-            <h3>Audio</h3>
-            <p>Earbuds and headphones for high-velocity add-ons.</p>
-          </div>
-          <div class="tile">
-            <div class="tile-icon">⌚</div>
-            <h3>Wearables</h3>
-            <p>Smartwatches and fitness devices (optional bundles).</p>
-          </div>
-          <div class="tile">
-            <div class="tile-icon">💻</div>
-            <h3>Laptops</h3>
-            <p>Secondary category — business & consumer configurations.</p>
-          </div>
-          <div class="tile">
-            <div class="tile-icon">📦</div>
-            <h3>Bundles</h3>
-            <p>Retail-ready kits to increase margin and sell-through.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CAPABILITIES (with photos) -->
-    <section class="section" id="capabilities">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>Capabilities</h2>
-          <p>Professional supply, consistent execution, and partnership-first approach.</p>
-        </div>
-
-        <div class="cap-grid">
-          <article class="cap-card reveal">
-            <img class="cap-img" alt="Phones on a desk"
-              src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=1200&q=80">
-            <div class="cap-body">
-              <h3>Verified Sourcing</h3>
-              <p>We prioritize trusted channels and clear documentation for B2B trade.</p>
-            </div>
+        <div class="grid3 reveal">
+          <article class="card">
+            <h3>Mobile Phone Wholesale</h3>
+            <p>High-demand models and mixed lots for distributors, wholesalers, and retailers.</p>
           </article>
-
-          <article class="cap-card reveal">
-            <img class="cap-img" alt="Warehouse shelves"
-              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80">
-            <div class="cap-body">
-              <h3>Volume Operations</h3>
-              <p>Built for lots, bundles, and distributor quantities—accurate and repeatable.</p>
-            </div>
+          <article class="card">
+            <h3>Verified Sourcing</h3>
+            <p>We prioritize trusted supply channels and clear documentation for trade workflows.</p>
           </article>
-
-          <article class="cap-card reveal">
-            <img class="cap-img" alt="Cargo logistics"
-              src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=80">
-            <div class="cap-body">
-              <h3>Logistics Support</h3>
-              <p>We work with shipping partners to support international fulfillment workflows.</p>
-            </div>
+          <article class="card">
+            <h3>Logistics Support</h3>
+            <p>We coordinate shipping/collection steps to support regional and international orders.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS (parallax-ish cards) -->
-    <section class="section alt" id="process">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>How It Works</h2>
-          <p>Simple process designed for speed and clarity.</p>
+    <!-- FEATURED (like “Featured Products” layout, but NOT selling) -->
+    <section class="section sectionAlt" aria-label="Featured categories">
+      <div class="wrap">
+        <div class="sectionHead center reveal">
+          <h2>Featured Categories</h2>
+          <p>Inquiry-based supply — tell us the models + quantity and we’ll respond with availability.</p>
         </div>
 
-        <div class="steps">
-          <div class="step reveal">
-            <div class="step-num">1</div>
-            <div>
-              <h3>Send Requirements</h3>
-              <p>Brand/model, quantity, target region, timeline, condition preferences.</p>
+        <div class="featured reveal">
+          <div class="featuredItem">
+            <div class="circleImg">
+              <img
+                alt="Smartphones"
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80">
             </div>
+            <div class="featName">Smartphones</div>
+            <div class="featDesc">Unlocked / region-specific SKUs</div>
+            <a class="featBtn" href="#contact">Request availability</a>
           </div>
-          <div class="step reveal">
-            <div class="step-num">2</div>
-            <div>
-              <h3>Get Quote & Availability</h3>
-              <p>We respond with pricing, lead times, and sourcing options.</p>
+
+          <div class="featuredItem">
+            <div class="circleImg">
+              <img
+                alt="Accessories"
+                src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=900&q=80">
             </div>
+            <div class="featName">Accessories</div>
+            <div class="featDesc">Chargers • cables • power</div>
+            <a class="featBtn" href="#contact">Request availability</a>
           </div>
-          <div class="step reveal">
-            <div class="step-num">3</div>
-            <div>
-              <h3>Confirm & Fulfill</h3>
-              <p>Finalize details, documentation, and shipping/collection workflow.</p>
+
+          <div class="featuredItem">
+            <div class="circleImg">
+              <img
+                alt="Wearables"
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80">
             </div>
+            <div class="featName">Wearables</div>
+            <div class="featDesc">Smartwatches & add-on bundles</div>
+            <a class="featBtn" href="#contact">Request availability</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ABOUT (simple & clean) -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="aboutGrid">
+          <div class="reveal">
+            <h2>About Navira Global LLC</h2>
+            <p class="muted">
+              Navira Global LLC is an electronics wholesale company mainly focused on mobile phones.
+              We support B2B buyers with sourcing, documentation, and logistics coordination.
+            </p>
+
+            <div class="bullets">
+              <div class="bullet">Wholesale & distribution focus</div>
+              <div class="bullet">Transparent communication</div>
+              <div class="bullet">Partner-first operations</div>
+            </div>
+          </div>
+
+          <div class="aboutPhoto reveal" aria-label="Warehouse photo">
+            <img
+              alt="Warehouse logistics"
+              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=80">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (matches your reference: big title left, form right) -->
     <section class="section contact" id="contact">
-      <div class="container split">
+      <div class="wrap contactGrid">
         <div class="reveal">
-          <h2>Request Wholesale Pricing</h2>
+          <h2 class="contactTitle">Contact Us</h2>
           <p class="muted">
-            Tell us what you need — we’ll reply with availability and bulk pricing.
+            Interested in working together? Share your requirements (models, quantities, region, timeline)
+            and we’ll get back to you shortly.
           </p>
 
-          <div class="contact-cards">
-            <div class="mini">
-              <div class="mini-label">Email</div>
-              <div class="mini-value">
-                <a href="mailto:info@naviraglobal.com">info@naviraglobal.com</a>
-              </div>
-            </div>
-            <div class="mini">
-              <div class="mini-label">WhatsApp / Phone</div>
-              <div class="mini-value">+1 (305) XXX-XXXX</div>
-            </div>
-            <div class="mini">
-              <div class="mini-label">Service</div>
-              <div class="mini-value">Wholesale • Distribution • Export</div>
-            </div>
+          <div class="contactInfo">
+            <div><strong>Email</strong><br><a href="mailto:info@naviraglobal.com">info@naviraglobal.com</a></div>
+            <div><strong>WhatsApp / Phone</strong><br>+1 (305) XXX-XXXX</div>
+            <div><strong>Business</strong><br>Wholesale • Distribution • Export</div>
           </div>
         </div>
 
         <form class="form reveal" onsubmit="return handleSubmit(event)">
+          <div class="twoCols">
+            <label>
+              First Name <span class="req">(required)</span>
+              <input name="firstName" required />
+            </label>
+            <label>
+              Last Name <span class="req">(required)</span>
+              <input name="lastName" required />
+            </label>
+          </div>
+
           <label>
-            Company Name
-            <input name="company" required placeholder="Your company"/>
+            Email <span class="req">(required)</span>
+            <input name="email" type="email" required />
           </label>
 
           <label>
-            Email
-            <input name="email" type="email" required placeholder="you@company.com"/>
+            Message <span class="req">(required)</span>
+            <textarea name="message" rows="6" required
+              placeholder="Example: iPhone 13/14 mix, 500 units, Middle East, needed in 2 weeks"></textarea>
           </label>
 
-          <label>
-            Needed Category
-            <select name="category">
-              <option>Smartphones</option>
-              <option>Accessories</option>
-              <option>Audio</option>
-              <option>Wearables</option>
-              <option>Laptops</option>
-              <option>Bundles</option>
-            </select>
-          </label>
-
-          <label>
-            Quantity & Models
-            <textarea name="message" rows="5" required
-              placeholder="Example: iPhone 13/14 mix — 500 units — Middle East — next 2 weeks"></textarea>
-          </label>
-
-          <button class="btn btn-primary" type="submit">Submit Inquiry</button>
-          <p class="form-note" id="formNote" aria-live="polite"></p>
+          <button class="sendBtn" type="submit">SEND</button>
+          <div class="note" id="formNote" aria-live="polite"></div>
         </form>
       </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand footer-brand">
-          <span class="logo-dot"></span>
-          <span class="brand-text">Navira Global LLC</span>
+    <!-- FOOTER (simple like your example) -->
+    <footer class="footer">
+      <div class="wrap footerGrid">
+        <div>
+          <div class="footerTitle">Navira Global LLC</div>
+          <div class="muted">Mobile Phone Wholesale & Distribution</div>
+          <div class="muted">© <span id="year"></span> Navira Global LLC</div>
         </div>
-        <p class="muted">© <span id="year"></span> Navira Global LLC. All rights reserved.</p>
-      </div>
 
-      <div class="footer-links">
-        <a href="#brands">Brands</a>
-        <a href="#products">Products</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
-      </div>
+        <div>
+          <div class="footerColTitle">Location</div>
+          <div class="muted">Doral / Miami, FL (USA)</div>
+        </div>
 
-      <div class="muted">
-        <div>Wholesale Mobile Phones & Electronics</div>
-        <div><a href="mailto:info@naviraglobal.com">info@naviraglobal.com</a></div>
+        <div>
+          <div class="footerColTitle">Contact</div>
+          <div class="muted"><a href="mailto:info@naviraglobal.com">info@naviraglobal.com</a></div>
+          <div class="muted">+1 (305) XXX-XXXX</div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>

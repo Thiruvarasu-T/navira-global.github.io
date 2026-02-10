@@ -1,55 +1,49 @@
 // Mobile menu
-const menuBtn = document.getElementById("menuBtn");
+const navBtn = document.getElementById("navBtn");
 const navLinks = document.getElementById("navLinks");
 
-menuBtn?.addEventListener("click", () => {
+navBtn?.addEventListener("click", () => {
   const isOpen = navLinks.classList.toggle("open");
-  menuBtn.setAttribute("aria-expanded", String(isOpen));
+  navBtn.setAttribute("aria-expanded", String(isOpen));
 });
 
 navLinks?.querySelectorAll("a").forEach(a => {
   a.addEventListener("click", () => {
     navLinks.classList.remove("open");
-    menuBtn?.setAttribute("aria-expanded", "false");
+    navBtn?.setAttribute("aria-expanded", "false");
   });
 });
 
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Simple front-end form handler (demo)
-function handleSubmit(e){
-  e.preventDefault();
-  const note = document.getElementById("formNote");
-  const form = e.target;
-  const data = new FormData(form);
-  const company = (data.get("company") || "").toString().trim();
-  note.textContent = `Thanks${company ? " " + company : ""}! We received your inquiry (demo). Connect an email endpoint to receive submissions.`;
-  form.reset();
-  return false;
-}
-window.handleSubmit = handleSubmit;
-
 // Reveal on scroll
 const reveals = document.querySelectorAll(".reveal");
 const io = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting) entry.target.classList.add("visible");
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add("visible");
   });
 }, { threshold: 0.12 });
-
 reveals.forEach(el => io.observe(el));
 
-// Parallax layers (hero visual)
-const layers = Array.from(document.querySelectorAll(".parallax-stage .layer"));
+// Simple parallax on hero background (subtle)
+const heroBg = document.getElementById("heroBg");
 function onScroll(){
+  if(!heroBg) return;
   const y = window.scrollY || 0;
-  // Small, smooth movement. Each layer uses data-depth.
-  layers.forEach(el => {
-    const depth = Number(el.getAttribute("data-depth") || "0.15");
-    const translate = Math.min(36, y * depth * 0.12);
-    el.style.transform = `translate3d(0, ${translate}px, 0)`;
-  });
+  heroBg.style.backgroundPosition = `center ${50 + (y * 0.06)}%`;
 }
 onScroll();
 window.addEventListener("scroll", onScroll, { passive: true });
+
+// Contact form (demo)
+function handleSubmit(e){
+  e.preventDefault();
+  const note = document.getElementById("formNote");
+  const data = new FormData(e.target);
+  const first = (data.get("firstName") || "").toString().trim();
+  note.textContent = `Thanks${first ? " " + first : ""}! Your message is captured (demo). Connect a form endpoint to receive emails.`;
+  e.target.reset();
+  return false;
+}
+window.handleSubmit = handleSubmit;
